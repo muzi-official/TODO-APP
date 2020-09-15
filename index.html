@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app logics</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyC-H7PiO7TpfzLbTDUKD2D1utANXy7Yqew",
+          authDomain: "databse-todo.firebaseapp.com",
+          databaseURL: "https://databse-todo.firebaseio.com",
+          projectId: "databse-todo",
+          storageBucket: "databse-todo.appspot.com",
+          messagingSenderId: "181903191806",
+          appId: "1:181903191806:web:3284f2a3a443f444c0bfaf",
+          measurementId: "G-YN0NMDR147"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+   
+</head>
+
+<body>
+    <center>
+        <div>
+            <label>TASK:</label> <input type="text" name="text" id="todo-item">
+            <br /><br />
+            <button onclick="addTodo()">ADD TASK</button>
+            <button onclick="deleteAll()">DELETE ALL</button>
+        </div>
+<br /><br />
+        <div>
+            <ul id="list">
+            </ul>
+        </div>
+    </center>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

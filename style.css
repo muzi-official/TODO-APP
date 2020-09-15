@@ -1,0 +1,12 @@
+div {
+    background: rgb(255, 241, 241);
+    border: 2px solid rgb(131, 47, 240);
+    padding: 50px;
+}
+li{
+    list-style-type: none;
+}
+.btn{
+    background: red;
+    color: white;
+}
